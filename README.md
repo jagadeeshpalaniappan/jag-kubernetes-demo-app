@@ -23,7 +23,7 @@ brew install minikube
 minikube start --vm=true
 ```
 
-### Step2: App Setup (Build Docker Images - locally)
+### Step2: App Setup (Build Docker Images)
 
 ```s
 eval $(minikube docker-env)
@@ -34,7 +34,7 @@ docker build ./books-api -t jag-books-api-img:v1.0.0
 docker images
 ```
 
-### Step3: App Setup (Build Docker Images -locally)
+### Step3: App Setup (Deploy docker images - in Kubernetes)
 
 ```s
 # create: nameSpace
