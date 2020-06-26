@@ -1,4 +1,4 @@
-# Jag's Kubernetes Node Microservices (Sample App)
+# Kubernetes Microservice (Sample Node.js App)
 
 This is a sample Book Store (Microservices) Application, This has
 
