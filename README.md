@@ -2,9 +2,9 @@
 
 This is a sample Book Store (Microservices) Application, This has
 
-- API Gateway
-- Microservice: Auth API
-- Microservice: Books API
+- API Gateway (Node.js App)
+- Microservice: Auth API (Node.js App)
+- Microservice: Books API (Node.js App)
 
 ## Local Setup
 
