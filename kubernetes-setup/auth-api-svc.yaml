@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: jag-auth-api-service
+  name: jag-auth-api-svc
 spec:
   type: NodePort
   selector:
-    label1: jag-auth-api-pod-label1
+    id: jag-auth-api-pod-id
   ports:
     - protocol: TCP
       port: 80

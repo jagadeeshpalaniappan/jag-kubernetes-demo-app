@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      podId: jag-mongo-db-pod-id
+      id: jag-mongo-db-pod-id
   template:
     metadata:
       labels:
-        podId: jag-mongo-db-pod-id
+        id: jag-mongo-db-pod-id
     spec:
       containers:
         - name: jag-mongo-db-pod-container1

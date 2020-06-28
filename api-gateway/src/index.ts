@@ -6,9 +6,8 @@ const app = express();
 const PORT = 8080;
 
 // Service Discovery:
-const AUTH_API = "http://jag-auth-api-service.book-store-ns.svc.cluster.local";
-const BOOKS_API =
-  "http://jag-books-api-service.book-store-ns.svc.cluster.local";
+const AUTH_API = "http://jag-auth-api-svc.book-store-ns.svc.cluster.local";
+const BOOKS_API = "http://jag-books-api-svc.book-store-ns.svc.cluster.local";
 
 app.get("/hello", (req, res) => {
   console.log("api-gateway:: /hello", req.query);

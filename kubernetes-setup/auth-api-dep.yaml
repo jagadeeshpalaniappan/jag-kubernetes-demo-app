@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jag-api-gateway-deployment
+  name: jag-auth-api-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      label1: jag-api-gateway-pod-label1
+      id: jag-auth-api-pod-id
   template:
     metadata:
       labels:
-        label1: jag-api-gateway-pod-label1
+        id: jag-auth-api-pod-id
     spec:
       containers:
-        - name: jag-api-gateway-pod-container1
-          image: jag-api-gateway-img:v1.0.0
+        - name: jag-auth-api-pod-container1
+          image: jag-auth-api-img:v1.0.0
           imagePullPolicy: Never
           ports:
             - containerPort: 8080

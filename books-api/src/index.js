@@ -7,7 +7,7 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 const MONGODB_URL =
-  "mongodb://jag-mongo-db-service.book-store-ns.svc.cluster.local:27017/books-db";
+  "mongodb://jag-mongo-db-svc.book-store-ns.svc.cluster.local:27017/books-db";
 const DATABASE_URL = process.env.DATABASE_URL || MONGODB_URL;
 
 mongoose.connect(DATABASE_URL, { useNewUrlParser: true });

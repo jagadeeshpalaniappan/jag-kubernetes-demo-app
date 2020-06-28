@@ -57,7 +57,7 @@ kubectl get pods
 kubectl get all -n book-store-ns
 
 # Get: API-GATEWAY-URL
-minikube service jag-api-gateway-service --url --namespace=book-store-ns
+minikube service jag-api-gateway-svc --url --namespace=book-store-ns
 
 # Open the URL in browser
 # sample: http://127.0.0.1:51517/hello
