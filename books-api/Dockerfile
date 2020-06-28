@@ -8,5 +8,5 @@ EXPOSE 8080
 
 COPY . .
 
-RUN npm run build
+# RUN npm run build
 CMD npm run serve

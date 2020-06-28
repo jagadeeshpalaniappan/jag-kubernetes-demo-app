@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: jag-mongo-db-service
+spec:
+  type: NodePort
+  selector:
+    podId: jag-mongo-db-pod-id
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017

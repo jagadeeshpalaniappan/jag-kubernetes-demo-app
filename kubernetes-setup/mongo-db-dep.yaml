@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jag-mongo-db-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      podId: jag-mongo-db-pod-id
+  template:
+    metadata:
+      labels:
+        podId: jag-mongo-db-pod-id
+    spec:
+      containers:
+        - name: jag-mongo-db-pod-container1
+          image: mongo
+          ports:
+            - containerPort: 27017
