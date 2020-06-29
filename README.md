@@ -1,6 +1,6 @@
-# Kubernetes Microservice (Sample Node.js App)
+# Kubernetes Demo App (using custom API Gateway)
 
-This is a sample Book Store (Microservices) Application, This has
+This is a sample Kubernetes Demo App (without using Inngress)
 
 - API Gateway (Node.js App)
 - Microservice: Auth API (Node.js App)
